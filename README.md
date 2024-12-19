@@ -1,10 +1,6 @@
 # Eye_Disease_Classification
- 
-EYE DISEASE CLASSIFICATION
-Project Report
+  
 
- 
- 
 ## Abstract
 This project focuses on the application of digital image processing techniques to classify eye diseases using a Convolutional Neural Network (CNN). The dataset consists of four classes: cataract, diabetic retinopathy, glaucoma, and normal eyes. The developed model achieves significant accuracy in identifying the diseases and provides a valuable diagnostic aid in ophthalmology.
 ________________________________________
