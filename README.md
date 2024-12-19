@@ -5,19 +5,19 @@ Project Report
 
  
  
-##Abstract
+## Abstract
 This project focuses on the application of digital image processing techniques to classify eye diseases using a Convolutional Neural Network (CNN). The dataset consists of four classes: cataract, diabetic retinopathy, glaucoma, and normal eyes. The developed model achieves significant accuracy in identifying the diseases and provides a valuable diagnostic aid in ophthalmology.
 ________________________________________
-##Introduction
+## Introduction
 Digital image processing plays a vital role in medical imaging, especially in the early diagnosis of diseases. This project leverages image classification techniques to distinguish between different eye diseases from retinal images. By using deep learning, specifically CNNs, the project automates disease detection, improving diagnostic speed and accuracy.
 ________________________________________
-##Literature Review
+## Literature Review
 Deep learning has been extensively explored for medical imaging and disease classification. Gulshan et al. (2016) demonstrated the effectiveness of deep learning for detecting diabetic retinopathy, showing high accuracy and specificity in retinal fundus photographs. Similarly, Kermany et al. (2018) highlighted how deep neural networks can diagnose a range of diseases, including ocular conditions, from medical images with expert-level precision. Pratt et al. (2016) applied convolutional neural networks specifically for diabetic retinopathy detection, providing a foundational approach to tackling retinal image-based diagnosis. Furthermore, Li et al. (2019) explored deep learning for detecting glaucomatous optic neuropathy, showcasing its potential in glaucoma screening. Finally, Ronneberger et al. (2015) introduced the U-Net architecture, a pivotal development in biomedical image segmentation, which has since influenced retinal image analysis and disease classification methods.
 ________________________________________
-##Objective
+## Objective
 To develop a model capable of accurately classifying eye diseases using retinal images.
 ________________________________________
-##Dataset
+## Dataset
 The dataset used is the "Eye Diseases Classification" dataset from Kaggle. It contains 4,217 images divided into four classes:
 •	Normal: 1,074 images
 •	Cataract: 1,038 images
@@ -25,7 +25,7 @@ The dataset used is the "Eye Diseases Classification" dataset from Kaggle. It co
 •	Diabetic Retinopathy: 1,098 images
 The dataset was split into training (80%) and validation (20%) sets for model development.
 ________________________________________
-##Methodology
+## Methodology
 Preprocessing
 •	Image resizing: All images were resized to 224x224 pixels.
 •	Normalization: Pixel values were normalized to a range of [0, 1].
@@ -45,7 +45,7 @@ Training
 •	Metrics: Accuracy
 •	Epochs: 10
 ________________________________________
-##Results
+## Results
 The model achieved the following performance:
 •	Training Accuracy: 89.6%
 •	Validation Accuracy: 82.7%
@@ -59,7 +59,7 @@ Epoch	Training Accuracy	Validation Accuracy
 5	81.8%	80.7%
 10	89.6%	82.7%
 ________________________________________
-##Visualizations
+## Visualizations
  
 Sample predictions:
 •	Predicted Class: Normal
@@ -67,12 +67,12 @@ Sample predictions:
 •	Confidence: 94.3%
 Images were visualized with predictions and actual labels using matplotlib to ensure the model's interpretability.
 ________________________________________
-##Conclusion
+## Conclusion
 This project demonstrates the potential of CNNs in medical imaging for automated disease classification. With further improvements, such as data augmentation and hyperparameter tuning, the model can achieve higher accuracy and robustness.
 
 
 ________________________________________
-##References
+## References
 1.	Kaggle Dataset: https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification
 2.	Gulshan, V., Peng, L., Coram, M., et al. (2016). "Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs." JAMA, 316(22), 2402-2410. https://doi.org/10.1001/jama.2016.17216
 3.	Kermany, D. S., Goldbaum, M., Cai, W., et al. (2018). "Identifying medical diagnoses and treatable diseases by image-based deep learning." Cell, 172(5), 1122-1131. https://doi.org/10.1016/j.cell.2018.02.010
@@ -81,7 +81,7 @@ ________________________________________
 6.	Ronneberger, O., Fischer, P., Brox, T. (2015). "U-Net: Convolutional Networks for Biomedical Image Segmentation." International Conference on Medical Image Computing and Computer-Assisted Intervention, 234-241. https://arxiv.org/abs/1505.04597
 
 ________________________________________
-##Appendix
+## Appendix
 Code Snippet: Prediction Visualization
 for images, labels in val_ds.take(1):
     predictions = model.predict(images)
